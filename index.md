@@ -1,6 +1,6 @@
 ## Welcome to My GitHub Pages
 
-###Junit的断言
+### Junit的断言
 JUnit为我们提供了一些辅助函数，他们用来帮助我们确定被测试的方法是否按照预期的效果正常工作，通常，把这些辅助函数称为断言。
 断言为Assert类，使用时需静态导入测试类中，可直接使用一下方法：
 1、assertArrayEquals(expecteds, actuals)    查看两个数组是否相等。
@@ -14,12 +14,12 @@ JUnit为我们提供了一些辅助函数，他们用来帮助我们确定被测
 9、assertFalse(condition)                             查看运行结果是否为false。
 10、assertThat(actual, matcher)                   查看实际值是否满足指定的条件
 11、fail()                                                    让测试失败                    
-###Junit的注解
+### Junit的注解
 
 @Test还有两种特殊的参数
 1、@Test(expected=XXX.class) ：测试异常
 2、@Test(timeout=1000) :测试超时
-###Junit的测试套件
+### Junit的测试套件
 测试套件就是组织测试类一起运行的，一个作为测试套件的入口类，不能包含其他的方法，更改测试运行器Suite.class，将要测试的类作为数组传入到Suite.SuiteClasses({})
 junit的suite类为提供给我们的测试套件类，使用@RunWith(Suite.class)和@Suite.SuiteClasses({Class1,Class2,Class3...})
 ```java
@@ -27,7 +27,7 @@ junit的suite类为提供给我们的测试套件类，使用@RunWith(Suite.clas
 @Suite.SuiteClasses({CalculatorTest.class,CalculatorTest2.class})
 public class JunitTestCase {}
 ```
-###Junit的参数化设置
+### Junit的参数化设置
 Junit提供了参数化测试套件
 1、更改默认的测试运行器（在测试类名上方加入@RunWith(Parameterized.class)）
 2、声明变量来存放预期值和结果值
@@ -58,7 +58,7 @@ public class ParametersTest {
 }
 ```
 
-###Junit的简单例子
+### Junit的简单例子
 首先我先创建个Calculator 的计算类，代码如下，里面有3个方法，分别是两个数相加、两个数相乘、两个数相除；
 ```java
 public class Calculator {
