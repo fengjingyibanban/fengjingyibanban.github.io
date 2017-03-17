@@ -159,5 +159,4 @@ public class CalculatorTest2 {
 }
 ```
 idea运行后，会出现以下结果
-
 其中黄色表示failure，红色表示error
